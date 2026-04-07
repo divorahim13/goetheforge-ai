@@ -1,3 +1,9 @@
 fastapi
 uvicorn
 python-dotenv
+supabase[async]
+langchain
+langchain-community
+langchain-groq
+langchain-anthropic
+langchain-openai
