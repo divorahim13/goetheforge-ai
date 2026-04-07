@@ -7,3 +7,5 @@ langchain-community
 langchain-groq
 langchain-anthropic
 langchain-openai
+langgraph
+langchain-core
