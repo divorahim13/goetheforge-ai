@@ -17,10 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Supabase client
+# Supabase client dengan penanganan spasi (strip)
 supabase: Client = create_client(
-    os.getenv("SUPABASE_URL", "https://placeholder.supabase.co"),
-    os.getenv("SUPABASE_ANON_KEY", "placeholder")
+    os.getenv("SUPABASE_URL", "").strip(),
+    os.getenv("SUPABASE_ANON_KEY", "").strip()
 )
 
 @app.get("/health")
